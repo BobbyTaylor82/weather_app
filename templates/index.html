@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style></style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Weather App</h1>
+        <p>For this web application, the OpenWeatherMap API was used to obtain the current weather.</p>
+        <p> To use this application, the user will have to enter a valid zip code.</p>
+        <form method="POST" action="/send" role="form" , name="petform">
+            <div class="form-group">
+                <label for="inputName">Zip Code</label>
+                <input type="text" id="inputName" name="zipcode" placeholder="ZipCode">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-default success">
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <div class="rows">
+            <h2>City: {{weather.location}}, USA</h2>
+            <hr>
+            <div class="col-md-4" style="border:2px black solid; margin:20px;">
+                <img src="https://i.pinimg.com/736x/c7/b7/b3/c7b7b39179b775510e208ae58254c398--free-android-android-apps.jpg" height="40%"
+                    width="40%" alt="" srcset="">
+                <h1>{{weather.temp}}</h1>
+                <h4>Temp</h4>
+            </div>
+            <div class="col-md-4" style="border:2px black solid; margin:20px;">
+                <img src="https://i.pinimg.com/736x/c7/b7/b3/c7b7b39179b775510e208ae58254c398--free-android-android-apps.jpg" height="40%"
+                    width="40%" alt="" srcset="">
+                <h1>{{weather.humidity}}</h1>
+                <h4>Humidity</h4>
+            </div>
+            <div class="col-md-4" style="border:2px black solid; margin:20px;">
+                <img src="https://i.pinimg.com/736x/c7/b7/b3/c7b7b39179b775510e208ae58254c398--free-android-android-apps.jpg" height="40%"
+                    width="40%" alt="" srcset="">
+                <h1>{{weather.temp_max}}</h1>
+                <h4>Max Temp</h4>
+            </div>
+            <div class="col-md-4" style="border:2px black solid; margin:20px;">
+                <img src="https://i.pinimg.com/736x/c7/b7/b3/c7b7b39179b775510e208ae58254c398--free-android-android-apps.jpg" height="40%"
+                    width="40%" alt="" srcset="">
+                <h1>{{weather.temp_min}}</h1>
+                <h4>Min Temp</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
