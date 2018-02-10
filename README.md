@@ -11,5 +11,5 @@ Tools used:
 <li>Flask</li>
 </ul>
 
-![](img_1.jpg)
-![](img_2.jpg)
+![](img_1.png)
+![](img_2.png)
